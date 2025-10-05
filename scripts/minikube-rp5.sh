@@ -86,8 +86,8 @@ else
 fi 
   
 
-echo "🚀 Step 3: Installing Minikube..."
-if command -v minikube; then
+echo "🚀 Step 3: Checking if Minikube is installed..."
+if command -v minikube &> /dev/null; then
   echo "Minikube already installed"
 else
   # Download binary  
